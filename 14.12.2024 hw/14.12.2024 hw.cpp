@@ -78,10 +78,13 @@ void ex1(int size, int* arr, int size2, int* arr2, int *arr3)
     }
     vector <int> arr4(sizeV);
     cout << sizeV;
+    int a;
+
 }
 
 int main()
 {
+
     int size;
     cout << "Enter size for arr 1: ";
     cin >> size;
