@@ -53,57 +53,11 @@ using namespace std;
 //	Результат : 
 //	Елементи A, яких немає в B : [1, 2]
 
-void enterNum(int size, int* arr)
-{
-    cout << "Enter Num for arr :";
-	for (int i = 0; i < size; i++)
-	{
-        cin >> *(arr + i);
-	}
-}
 
-void ex1(int size, int* arr, int size2, int* arr2, int *arr3)
-{
-    int sizeV = 0;
-    for (int i = 0; i < size; i++)
-    {
-        for (int j = 0; j < size2; j++)
-        {
-            if (*(arr + i) != *(arr2 + j))
-            {
-                sizeV ++;
-                break;
-            }
-        }
-    }
-    vector <int> arr4(sizeV);
-    cout << sizeV;
-    int a;
-
-}
 
 int main()
 {
 
-    int size;
-    cout << "Enter size for arr 1: ";
-    cin >> size;
-    int* arr1 = new int[size];
-    int size2;
-    cout << "Enter size for arr 2: ";
-    cin >> size2;
-    int* arr2 = new int[size2];
-
-    int maxSize = (size > size2) ? size : size2;
-    int* arr3 = new int[maxSize];
-
-    enterNum(size, arr1);
-    enterNum(size2, arr2);
-
-    ex1(size, arr1, size2, arr2, arr3);
-
-    delete[] arr1;
-    delete[] arr2;
 }
 
 
